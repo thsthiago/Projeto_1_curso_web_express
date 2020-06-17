@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Contato</title>
+    <meta name="description" content="Primeiro projeto">
+    <meta name="author" content="Thiago Cabral">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="Estilos/index.css">
+    <link rel="stylesheet" href="Estilos/contatos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">Logo.Empresa</a>
+      </div>
+        <div class="nav-desktop">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a class="pagina" href="contatos.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-mobile">
+          <nav>
+            <h2><i class="fa fa-bars"></i></h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li class="pagina-mobile"><a class="pagina" href="contatos.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <section id="section1-contato">
+      <div class="overlay"> 
+        <div class="center">
+          <h1>Contato</h1>
+          <p>Quis non ad mollit duis deserunt sit amet eiusmod occaecat in consectetur magna commodo elit laborum magna cupidatat voluptate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="secao-formulario">
+      <div class="center">
+      <div class="flex">
+        <form method="POST">
+          <h3>Entre em contato que estaremos respondendo o mais breve possível!</h3>
+          <div class="input">
+            <div class="w50">
+              <input type="text" placeholder="Nome..." name="name" required>
+            </div>
+            <div class="w50">
+              <input type="text" placeholder="Sobrenome..." name="sobrenome" required>
+            </div>
+          </div>
+          <div class="w100">
+            <input type="email" placeholder="E-mail" name="email" required>
+          </div>
+          <div class="text">
+            <textarea name="mensagem" placeholder="Sua mensagem..." required></textarea>
+          </div>
+          <div class="botao">
+            <input type="submit" name="acao" value="Enviar">
+          </div>
+        </form>
+        <div class="fale-equipe">
+          <h2><i class="fa fa-comment"></i>Fale com a nossa equipe!</h2>
+          <p>Commodo enim duis veniam laborum dolore nostrud cupidatat deserunt.</p>
+          <p class="contacts"><i class="fas fa-phone-alt"></i>(11)99999-9999</p>
+          <p class="contacts"><i class="fas fa-phone-alt"></i>(11)99999-9999</p>
+          <p class="contacts"><i class="fas fa-phone-alt"></i>(11)99999-9999</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+      <footer id="footer1">
+        <div class="center">
+          <div class="footer-prin">
+            <div class="aonde">
+              <h2>Aonde estamos?</h2>
+              <p><i class="fa fa-map-pin" aria-hidden="true"></i>R.Fulano da silva, Coqueiros, Flopira/SC</p>
+              <p><i class="fa fa-phone" aria-hidden="true"></i>(48)99999-9999</p>
+            </div>
+            <div class="links">
+              <h2>Links úteis</h2>
+              <a href="#">Empresa</a>
+              <a href="#">W3Schools</a>
+            </div>
+            <div class="conosco">
+              <h2>Conecte-se conosco</h2>
+              <div class="conect-icons">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <footer>
+        <div class="direitos">
+          <p>Todos os direitos reservados</p>
+        </div>
+      </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      $('.nav-mobile h2').click(function(){
+        $('.nav-mobile ul').slideToggle();
+      });
+    </script>
+</body>
+
+</html>
